@@ -6,6 +6,7 @@
     "author": "Paul Halleux",
     "license": "MIT",
     "scripts": {
+        "publish:local": "yarn publish --registry http://localhost:4873/",
         "pack:local": "rimraf pack && yarn pack --filename paulhalleux-eslint-config.tgz && (if not exist pack mkdir pack) && move paulhalleux-eslint-config.tgz ./pack"
     },
     "eslintConfig": {
