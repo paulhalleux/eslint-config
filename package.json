@@ -5,8 +5,12 @@
     "repository": "https://github.com/paulhalleux/eslint-config",
     "author": "Paul Halleux",
     "license": "MIT",
+    "publishConfig":{
+        "access": "restricted",
+        "registry":"https://pkg.paulhalleux.be"
+    },
     "scripts": {
-        "publish:local": "yarn publish --registry http://localhost:4873/",
+        "publish:local": "yarn publish",
         "pack:local": "rimraf pack && yarn pack --filename paulhalleux-eslint-config.tgz && (if not exist pack mkdir pack) && move paulhalleux-eslint-config.tgz ./pack"
     },
     "eslintConfig": {
