@@ -14,13 +14,16 @@ module.exports = {
     },
     plugins: [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "simple-import-sort"
     ],
     rules: {
         indent: [
             "warn",
             "tab"
         ],
+        "simple-import-sort/exports": "warn",
+        "simple-import-sort/imports": "warn",
         'linebreak-style': [
             "warn",
             "windows"
@@ -29,10 +32,8 @@ module.exports = {
             "warn",
             "single"
         ],
-        semi: [
-            "warn",
-            "always"
-        ],
+        semi: "off",
+        "@typescript-eslint/semi": ["warn"],
         'keyword-spacing': [
             "warn",
             {

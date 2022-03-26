@@ -1,13 +1,13 @@
 {
     "name": "@paulhalleux/eslint-config",
-    "version": "0.1.0",
+    "version": "0.0.1-beta.5",
     "description": "Common eslint configuration for all my projects",
     "repository": "https://github.com/paulhalleux/eslint-config",
     "author": "Paul Halleux",
     "license": "MIT",
-    "publishConfig":{
+    "publishConfig": {
         "access": "restricted",
-        "registry":"https://pkg.paulhalleux.be"
+        "registry": "https://pkg.paulhalleux.be"
     },
     "scripts": {
         "publish:local": "yarn publish",
@@ -22,11 +22,12 @@
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^5.13.0",
         "@typescript-eslint/parser": "^5.13.0",
-        "eslint-plugin-react": "^7.29.3",
         "eslint": "^8.10.0",
         "eslint-plugin-autofix": "^1.1.0",
         "eslint-plugin-import": "^2.25.4",
-        "eslint-plugin-prettier": "^4.0.0"
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.29.3",
+        "eslint-plugin-simple-import-sort": "^7.0.0"
     },
     "peerDependencies": {
         "eslint": ">=7.8",
